@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>仲尼小组</title>
+<script type="text/javascript" src="js/1.js"></script>
+
+<style type="text/css">
+a{text-decoration:none;color:#000000}
+.all{height:650px;width:100%;background:url(images/%E6%9C%AA%E6%A0%87%E9%A2%98-1.png);background-size:100%;}
+.top{height:85%;width:80%;margin-left: 10% ;}
+.top_1{height:14%;width:100%}
+.top_img{height:100%;width:20%;float:left;}
+.top_right{height:85%;width:30%;padding-right:5%;float:right;}
+.bomton{height:80%;width:100%;margin-top:1%;}
+.photo{height:100%;width:55%;float:left;}
+.mokuai{height:480px;width:45%;float:left;}
+.mokuai_1{width:65%;height:30%;background:#fff;margin:0 0 0 15%;border-radius:10px}
+.photo_1{float:left;border-radius:10px 0 0 10px;height:100%;width:128px;}
+.wenzi{width:50%;height:100%;float:left;padding:1%}
+.button1{background:#009966;color:#FFFFFF;float:right}
+.mokuai_2{width:65%;height:30%;background:#fff;margin:7% 0 0 15%;border-radius:10px}
+.allbody{height:700px;width:100%}
+.dingbu{height:50px;width:100%}
+.mes{color:#09F;font-size:14px}
+</style>
+</head>
+
+<body>
+<div  class="allbody">
+    <div id="win"  style="width:400px;height:250px;background-color:#FFFFFF;position:absolute;top:25%;left:37%;z-index:1;display:none;border-radius:15px">
+   		 <div style="height:auto;width:100%">
+         <div style="height:auto;width:21px;float:right;font-size:36px;margin-top:0px;" ><a href="javascript:closeLogin();">X</a></div>
+         <h2 align="center">登录</h2>
+        
+         </div>
+    
+		<form  name="myfrom" id="myform" method="post" action="login.php" style="padding-left:100px;">
+            账号：<input type="text" id="users" name="users"/><br><br>
+            密码：<input type="password" id="password" name="password"/><br><br>
+            <input type="button" value="登录" onclick="landing()"/>
+            <input type="reset" value="重置"/>
+        </form>
+     </div>
+      <div id="reg"  style="width:400px;height:250px;background-color:#FFFFFF;position:absolute;top:25%;left:37%;z-index:1;display:none;border-radius:15px">
+   		 <div style="height:auto;width:100%">
+         <div style="height:auto;width:21px;float:right;font-size:36px;margin-top:0px;margin-right:10px;" ><a href="javascript:closeres();">X</a></div>
+         <h2 align="center">注册</h2>
+        
+         </div>
+    	
+        <form  name="myfrom2" id="myform2" method="post" action="auth.php" style="padding-left:100px;">
+          账号：<input type="text" style="margin-left:30px;" id="rg_users" name="rg_users"><br><br>
+          密码：<input type="password" style="margin-left:30px;" id="rg_pwd" name="rg_pwd"><br><br>
+         确认密码：<input type="password" id="confirm_pwd"/><br><br>
+        <input type="button" value="注册" onclick="register()"/>
+        </form>
+     </div>
+     
+	<div  class="dingbu">
+    	<p class="mes"  align="center">最新课程 《数据库系统概论》  立即报名</p>
+    </div>
+    
+    <div class="all" >
+            <div  class="top">
+                <div class="top_1">
+                    <img src="images/logo.png" class="top_img" />
+                    
+                    <div class="top_right"  >
+                        <h5><a href="classify.html">课程目录</a>&nbsp;&nbsp;| &nbsp;<a href="javascript:openLogin();">登陆</a>&nbsp;&nbsp;| &nbsp;<a href="javascript:openres();">注册</a></h5>
+                        
+                        
+                    </div>
+                </div>
+                 <div class="bomton" >
+                	<div  class="photo">
+                            <video width="100%" height="100%" src="view/123_01.mp4" autoplay="autoplay"></video>
+                    </div>
+                    <div class="mokuai" >
+                    	<div class="mokuai_1" >
+                        	<img src="images/module-nd-deep-learning.png" class="photo_1"/>
+                            <div  class="wenzi">
+                            	<h4 style="color:#6A0000">理解广告</h4>
+                                <h5>创意、设计、营销、传播</h5>
+                               <a href="cont2.html"> <input type="button" height="10px" width="50%" class="button1"  value="快速选课"></a>
+                            </div>
+                        </div>
+                        <div class="mokuai_2" >
+                        	<img src="images/612d1341gy1fhymbi2z9jj203k040web.jpg" class="photo_1"/>
+                            <div class="wenzi">
+                            	<h4 style="color:#6A0000">建筑艺术与赏析</h4>
+                                <h5>从力和美的角度出发来分析和揭示建筑之美</h5>
+                                <input type="button" height="10px;" width="50%" class="button1" value="快速选课">
+                            </div>
+                        </div>
+                        <div class="mokuai_2">
+                      	   <img src="images/module-nd-data-analyst.png" class="photo_1"/>
+                            <div class="wenzi">
+                            	<h4 style="color:#6A0000">台湾历史与文化</h4>
+                                <h5>历史文化、血缘与族群关系、思想语言、民俗宗教</h5>
+                                <input type="button" height="10px;" width="50%" class="button1" value="快速选课">
+                            </div>
+                        </div>
+                    </div>
+                    
+                
+                </div>
+               
+      	   </div>
+    </div>
+</div>
+</body>
+</html>

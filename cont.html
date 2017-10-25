@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/cont.css" rel="stylesheet" type="text/css"> 
+<title>仲尼小组</title>
+<script type="text/javascript" src="js/1.js"></script>
+<style type="text/css">
+.out{box-shadow:0px 0px  5px 3px #aaa;}
+a{text-decoration:none;color:#000000}
+.all{height:auto;width:100%;}
+.main{height:600px;width:80%;margin-left: 10% ;}
+.top{height:10%;width:100%;}
+.source_pic{height:100%;width:15%;float:left;}
+.top_right{height:80%;width:30%;float:right;}
+.middle{height:85%;width:100%;margin-top:5%;border-radius:10px;background:#FFF;}
+.video{height:100%;width:55%;float:left;}
+.video_pic{border-radius:10px 0 0 10px;}
+.introduce{height:100%;width:45%;float:left;}
+.but{border-radius:10px;background:#009966;color:#FFFFFF;}
+.bottom{height:auto;width:78%;margin-top:90px;margin-left:10%;background:#FFF;padding:15px;border-radius:10px;}
+.page_end{height:20px;}
+</style>
+</head>
+
+<body style="background:#E8FFF7">
+		 <div id="win"  style="width:400px;height:250px;background-color:#FFFFFF;position:absolute;top:25%;left:37%;z-index:1;display:none;border-radius:15px">
+   		 <div style="height:auto;width:100%">
+         <div style="height:auto;width:21px;float:right;font-size:36px;margin-top:0px;" ><a href="javascript:closeLogin();">X</a></div>
+         <h2 align="center">登录</h2>
+        
+         </div>
+    
+		<form  name="myfrom" id="myform" method="post" action="login.php" style="padding-left:100px;">
+            账号：<input type="text" id="users" name="users"/><br><br>
+            密码：<input type="password" id="password" name="password"/><br><br>
+            <input type="button" value="登录" onclick="landing()"/>
+            <input type="reset" value="重置"/>
+        </form>
+     </div>
+      <div id="reg"  style="width:400px;height:250px;background-color:#FFFFFF;position:absolute;top:25%;left:37%;z-index:1;display:none;border-radius:15px">
+   		 <div style="height:auto;width:100%">
+         <div style="height:auto;width:21px;float:right;font-size:36px;margin-top:0px;margin-right:10px;" ><a href="javascript:closeres();">X</a></div>
+         <h2 align="center">注册</h2>
+        
+         </div>
+    	
+        <form  name="myfrom2" id="myform2" method="post" action="auth.php" style="padding-left:100px;">
+          账号：<input type="text" style="margin-left:30px;" id="rg_users" name="rg_users"><br><br>
+          密码：<input type="password" style="margin-left:30px;" id="rg_pwd" name="rg_pwd"><br><br>
+         确认密码：<input type="password" id="confirm_pwd"/><br><br>
+        <input type="button" value="注册" onclick="register()"/>
+        </form>
+     </div>
+    <div class="all">
+            <div class="main">
+                <div class="top">
+                    <img src="images/logo.png" class="source_pic"/>
+                    
+                    <div class="top_right">
+                      <h5><a href="classify.html">课程目录</a>&nbsp;&nbsp;| &nbsp;<a href="javascript:openLogin();">登陆</a>&nbsp;&nbsp;| &nbsp;<a href="javascript:openres();">注册</a></h5>
+                        
+                        
+                    </div>
+                </div>
+                 <div class="middle" class="out">
+                	<div class="video">
+                           <img class="video_pic" src="images/timg1.jpg" height="100%" width="100%"/>
+                          <!-- <div style="height:100%;width:100%;background:#00F;position:relative;z-index:100;"></div>-->
+                    </div>
+                    <div class="introduce">
+                    	<div style="margin:5%">
+                        	<h1>程序设计基础（C语言）</h1>
+                            <h3>深圳技师学院 / xxxx</h3><br>
+                            课程介绍<br>
+       							<p>C语言是国内外广泛使用的一种计算机语言，它适合于作为系统描述语言，既可用来编写系统软件，也可用来编写应用软件。C语言不仅为计算机专业工作者，而且为广大计算机应用人员使用。
+								</p>
+                                <p>本课程主要讲解C语言程序设计的基本概念、方法、理论，内容包括基本数据类型、控制语句、数组等</p>
+                                <p> 本课程的重点和难点是控制语句、数组、函数等语法知识的灵活应用。本课程教学非简单的语法知识罗列，而是突出讲述结构化程序设计的思想，注重在实例中讲解语法知识，在课堂练习中与学生互动，促使学生活学活用，锻炼其程序设计能力，培养其应用计算机解决和处理实际问题的思维方法与编程能力。</p>
+                               <a href="loview.html"> <input type="button" height="75px" width="200px" class="but" value="加入课程"></a>
+                        </div>
+                    </div>
+                    
+                
+                </div>
+                
+               
+      	   </div>
+      <div class="bottom">
+   		<div >
+                     <h3>课程简介</h3>
+                    <div ng-bind-html="courseInfo.intro | to_trusted">
+                      <p>教学方法</p>
+                      <p> </p>
+                      <p>（1）校内学生</p>
+                      <p>线上教学： 每周2学时视频学习。</p>
+                      <p>       线上练习：需完成任务点和每章练习。</p>
+                      <p>       线上答疑：通过QQ群和课程讨论区开展在线讨论和答疑。</p>
+                      <p>       线下教学：翻转课堂，通过习题讲解，帮助学生巩固理论知识。</p>
+                      <p>       线下实验：每周2学时上机实验，采用在线判题系统自动判题。 </p>
+                      <p>（2）网络选课学生</p>
+                      <p>线上教学： 每周3学时视频学习。</p>
+                      <p>       线上练习和实验：根据教学内容发布章节练习和实验，在线提交程序源码。</p>
+                      <p>       线上答疑：通过QQ群和课程讨论区开展在线讨论和答疑。</p>
+                      <p><br />
+                      </p>
+                      <p><br />
+                      </p>
+                      <p><br />
+                      </p>
+                      <p><br />
+                      </p>
+                    </div>
+                    <h3>教学目标</h3>
+                    <div ng-bind-html="courseInfo.objective | to_trusted">
+                      <p> </p>
+                      <p>学生完成本课程，应能够：</p>
+                      <p> 1. 树立结构化程序设计思想。根据实际问题，采用结构化程序设计方法进行功能模块分解。</p>
+                      <p> 2. 灵活运用语法知识，对分解的功能模块进行编程实现。</p>
+                      <p> 3. 熟练进行代码的调试、跟踪，得到程序的正确运行结果。</p>
+                      <p><br />
+                      </p>
+                    </div>
+                    <h3>教学方法</h3>
+                    <div ng-bind-html="courseInfo.method | to_trusted">
+                      <p> </p>
+                      <p>（1）校内学生</p>
+                      <p>线上教学： 每周2学时视频学习。</p>
+                      <p>       线上练习：需完成任务点和每章练习。</p>
+                      <p>       线上答疑：通过QQ群和课程讨论区开展在线讨论和答疑。</p>
+                      <p>       线下教学：翻转课堂，通过习题讲解，帮助学生巩固理论知识。</p>
+                      <p>       线下实验：每周2学时上机实验，采用在线判题系统自动判题。 </p>
+                      <p>（2）网络选课学生</p>
+                      <p>线上教学： 每周3学时视频学习。</p>
+                      <p>       线上练习和实验：根据教学内容发布章节练习和实验，在线提交程序源码。</p>
+                      <p>       线上答疑：通过QQ群和课程讨论区开展在线讨论和答疑。</p>
+                    </div>
+                 </div>
+                 <div class="page_end"></div>
+           </div>
+           
+       
+    </div>
+
+</body>
+</html>

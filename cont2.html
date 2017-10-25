@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/cont.css" rel="stylesheet" type="text/css"> 
+<title>仲尼小组</title>
+<script type="text/javascript" src="js/1.js"></script>
+<style type="text/css">
+.out{box-shadow:0px 0px  5px 3px #aaa;}
+a{text-decoration:none;color:#000000}
+.all{height:auto;width:100%;}
+.main{height:600px;width:80%;margin-left: 10% ;}
+.top{height:10%;width:100%;}
+.source_pic{height:100%;width:15%;float:left;}
+.top_right{height:80%;width:30%;float:right;}
+.middle{height:85%;width:100%;margin-top:5%;border-radius:10px;background:#FFF;}
+.video{height:100%;width:55%;float:left;}
+.video_pic{border-radius:10px 0 0 10px;}
+.introduce{height:100%;width:45%;float:left;}
+.but{border-radius:10px;background:#009966;color:#FFFFFF;}
+.bottom{height:auto;width:78%;margin-top:90px;margin-left:10%;background:#FFF;padding:15px;border-radius:10px;}
+.page_end{height:20px;}
+</style>
+</head>
+
+<body style="background:#E8FFF7">
+ <div id="win"  style="width:400px;height:250px;background-color:#FFFFFF;position:absolute;top:25%;left:37%;z-index:1;display:none;border-radius:15px">
+   		 <div style="height:auto;width:100%">
+         <div style="height:auto;width:21px;float:right;font-size:36px;margin-top:0px;" ><a href="javascript:closeLogin();">X</a></div>
+         <h2 align="center">登录</h2>
+        
+         </div>
+    
+		<form  name="myfrom" id="myform" method="post" action="login.php" style="padding-left:100px;">
+            账号：<input type="text" id="users" name="users"/><br><br>
+            密码：<input type="password" id="password" name="password"/><br><br>
+            <input type="button" value="登录" onclick="landing()"/>
+            <input type="reset" value="重置"/>
+        </form>
+     </div>
+      <div id="reg"  style="width:400px;height:250px;background-color:#FFFFFF;position:absolute;top:25%;left:37%;z-index:1;display:none;border-radius:15px">
+   		 <div style="height:auto;width:100%">
+         <div style="height:auto;width:21px;float:right;font-size:36px;margin-top:0px;margin-right:10px;" ><a href="javascript:closeres();">X</a></div>
+         <h2 align="center">注册</h2>
+        
+         </div>
+    	
+        <form  name="myfrom2" id="myform2" method="post" action="auth.php" style="padding-left:100px;">
+          账号：<input type="text" style="margin-left:30px;" id="rg_users" name="rg_users"><br><br>
+          密码：<input type="password" style="margin-left:30px;" id="rg_pwd" name="rg_pwd"><br><br>
+         确认密码：<input type="password" id="confirm_pwd"/><br><br>
+        <input type="button" value="注册" onclick="register()"/>
+        </form>
+     </div>
+    <div class="all">
+            <div class="main">
+                <div class="top">
+                    <img src="images/logo.png" class="source_pic"/>
+                    
+                    <div class="top_right">
+                      <h5><a href="classify.html">课程目录</a>&nbsp;&nbsp;| &nbsp;<a href="javascript:openLogin();">登陆</a>&nbsp;&nbsp;| &nbsp;<a href="javascript:openres();">注册</a></h5>
+                        
+                        
+                    </div>
+                </div>
+                 <div class="middle" class="out">
+                	<div class="video">
+                           <img class="video_pic" src="images/guanggao.jpg" height="100%" width="100%"/>
+                          <!-- <div style="height:100%;width:100%;background:#00F;position:relative;z-index:100;"></div>-->
+                    </div>
+                    <div class="introduce">
+                    	<div style="margin:5%">
+                        	<h1>理解广告</h1>
+                            <h3>深圳技师学院 / xxxx</h3><br>
+                            课程介绍<br>
+       							<p>有人说“我们今天的世界是由水、空气和广告构成的”，把广告和水、空气放在同等重要的位置上，虽然有夸张的成分，但也反映了一定的广告现象，广告充斥了我们的生活，充斥了大众传播媒介。我们怎么看待广告现象？广告的本质是什么？广告创意有着怎样的最新发展趋势？植入式广告如何创新了？传统的广告表现形式又面临怎样的挑战？在新媒体背景下，互动广告如何吸引受众？本课程将以大量的广告案例为分析对象，为你一一解答上述问题，为你解释“小广告”背后的“大道理”。</p>
+                               <a href="loview.html"> <input type="button" height="75px" width="200px" class="but" value="加入课程"></a>
+                        </div>
+                    </div>
+                    
+                
+                </div>
+                
+               
+      	   </div>
+      <div class="bottom">
+   		<div >
+                     <h3>课程简介</h3>
+                    <div ng-bind-html="courseInfo.intro | to_trusted">
+                      <p>教学方法</p>
+                      <p> </p>
+                      <p>本门课程主要采用线上教学，同学们请自主学习，合理安排时间。本课程的内容由教师讲课视频和文字部分共同组成，文字资料有助于大家更好的理解老师视频中讲解的知识点，对广告行业加深认识，并且是考核的重点。</p>
+                      <p><br />
+                      </p>
+                      <div ng-bind-html="courseInfo.objective | to_trusted"></div>
+                      <h3>教学方法</h3>
+                      <div ng-bind-html="courseInfo.method | to_trusted">
+                        <p> </p>
+                        <p>（1）校内学生</p>
+                        <p>线上教学： 每周2学时视频学习。</p>
+                        <p>       线上练习：需完成任务点和每章练习。</p>
+                        <p>       线上答疑：通过QQ群和课程讨论区开展在线讨论和答疑。</p>
+                        <p>       线下教学：翻转课堂，通过习题讲解，帮助学生巩固理论知识。</p>
+                        <p>       线下实验：每周2学时上机实验，采用在线判题系统自动判题。 </p>
+                        <p>（2）网络选课学生</p>
+                        <p>线上教学： 每周3学时视频学习。</p>
+                        <p>       线上练习和实验：根据教学内容发布章节练习和实验，在线提交程序源码。</p>
+                        <p>       线上答疑：通过QQ群和课程讨论区开展在线讨论和答疑。</p>
+                      </div>
+                      <p>&nbsp;</p>
+                      <p> 广告，即广而告知之意。广告是为了某种特定的需要，通过一定形式的媒体，公开而广泛地向公众传递信息的宣传手段。广告有广义和狭义之分，广义广告包括非经济广告和经济广告。非经济广告指不以盈利为目的的广告，又称效应广告，如政府行政部门、社会事业单位乃至个人的各种公告、启事、声明等，主要目的是推广；狭义广告仅指经济广告，又称商业广告，是指以盈利为目的的广告，通常是商品生产者、经营者和消费者之间沟通信息的重要手段，或企业占领市场、推销产品、提供劳务的重要形式，主要目的是扩大经济效益。<br />
+                      </p>
+                      <p><br />
+                      </p>
+                      <p><br />
+                      </p>
+                      <p><br />
+                      </p>
+                    </div>
+                    <p><strong>【准确表达广告信息】</strong>广告设计是一门实用性很强的学科，有明确的的目的性，准确传达广告信息是广告设计的首要任务。现代商业社会中，商品和服务信息绝大多数都是通过广告传递的，平面广告通过文字、色彩、图形将信息准确的表达出来，而二维广告则通过声音、动态效果表达信息，通过以上各种方式商品和服务才能被消费者接受和认识。由于文化水平、个人经历、受教育程度、理解能力的不同，消费者对信息的感受和反应也会不一样，所以设计时需仔细把握。</p>
+                    <p><strong>【树立品牌形象】</strong>企业的形象和品牌决定了企业和产品在消费者心中的地位，这一地位通常靠企业的实力和广告战略在维护和塑造。在平面广告中，报纸广告，杂志广告由于受众广、发行量大，可信度高而具有很强的品牌塑造能力。而结合二维广告，则可以使塑造力大大增强。</p>
+                    <p><strong>【引导消费】</strong>平面广告一般可以直接打到消费者手中，而信息详细具体，因此如购物指南，房产广告、商品信息等都可以引导消费者去购买产品。二维广告则可以通过动态效果的影响，促使消费者消费。</p>
+                    <p><strong>【满足消费者】</strong>一幅色彩绚丽、形象生动的广告作品，能以其非同凡响的美感力量增强广告的感染力，使消费者沉浸在商品和服务形象给予的愉悦中，使其自觉接受广告的引导。因此广告设计时物质文化和生活方式的审美再创造，通过夸张、联想、象征、比喻、诙谐、幽默等手法对画面进行美化处理，使之符合人美的审美需求，可以技法消费者的审美情趣，可有效地引导其在物质文化和生活方式上的消费观念。</p>
+                    <p><br />
+                    </p>
+                    <p>【创意】广告</p>
+                    <p>创意广告，是公共关系广告的一种形式，它以企业的名义发起、组织各种社会活动，并利用这种公关活动，创造出具有利于社会进步、有利于企业发展、有利于产品销售的新观念，以此为主题进行广告宣传，公共关系的基本特征。</p>
+                    <h3>&nbsp;</h3>
+          <div ng-bind-html="courseInfo.method | to_trusted"></div>
+        </div>
+                 <div class="page_end"></div>
+           </div>
+           
+       
+    </div>
+
+</body>
+</html>

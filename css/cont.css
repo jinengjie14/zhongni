@@ -1,0 +1,15 @@
+.out{
+box-shadow:0px 0px  5px 3px #aaa;
+}
+.all{height:auto;width:100%;}
+.main{height:600px;width:80%;margin-left: 10% ;}
+.top{height:10%;width:100%;}
+.source_pic{height:100%;width:15%;float:left;}
+.top_right{height:80%;width:30%;float:right;}
+.middle{height:85%;width:100%;margin-top:5%;border-radius:10px;background:#FFF;}
+.video{height:100%;width:55%;float:left;}
+.video_pic{border-radius:10px 0 0 10px;}
+.introduce{height:100%;width:45%;float:left;}
+.but{border-radius:10px;background:#009966;color:#FFFFFF;}
+.bottom{height:auto;width:78%;margin-top:90px;margin-left:10%;background:#FFF;padding:15px;border-radius:10px;}
+.page_end{height:20px;}

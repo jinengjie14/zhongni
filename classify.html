@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>https://cn.udacity.com/</title>
+<script type="text/javascript" src="js/1.js"></script>
+<style type="text/css">
+.middle_de{
+
+border:1px solid #BFBFBF;
+
+}
+.middle_de{
+
+box-shadow:0px 0px  5px 3px #aaa;
+}
+a{text-decoration:none;color:#000;}
+body{background:#E8FFF7}
+.all{height:auto;width:100%;}
+.top{height:160px;width:80%;margin-left: 10% ;}
+.top_set{height:80px;width:100%;}
+.top_img{height:100%;width:15%;float:left;}
+.top_ban{height:80%;width:30%;float:right;}
+.top_bottom{height:90px;width:100%;background:#FFF;padding-top:2%;margin-top:1%;border-radius:15px}
+.middle{height:auto;width:80%;;border-radius:15px;margin-top:30px;margin-left: 10% ;}
+.middle_1{height:290px;width:100%;}
+.middle_de{height:290px;width:30%;float:left;margin:2% 1.5% 0 1.5%;border:1px;background:#FFFFFF}
+.middle_txt{height:40%;width:100%;align:center}
+</style>
+</head>
+
+<body >
+<div id="win"  style="width:400px;height:250px;background-color:#FFFFFF;position:absolute;top:25%;left:37%;z-index:1;display:none;border-radius:15px">
+   		 <div style="height:auto;width:100%">
+         <div style="height:auto;width:21px;float:right;font-size:36px;margin-top:0px;" ><a href="javascript:closeLogin();">X</a></div>
+         <h2 align="center">登录</h2>
+        
+         </div>
+    
+		<form  name="myfrom" id="myform" method="post" action="login.php" style="padding-left:100px;">
+            账号：<input type="text" id="users" name="users"/><br><br>
+            密码：<input type="password" id="password" name="password"/><br><br>
+            <input type="button" value="登录" onclick="landing()"/>
+            <input type="reset" value="重置"/>
+        </form>
+     </div>
+      <div id="reg"  style="width:400px;height:250px;background-color:#FFFFFF;position:absolute;top:25%;left:37%;z-index:1;display:none;border-radius:15px">
+   		 <div style="height:auto;width:100%">
+         <div style="height:auto;width:21px;float:right;font-size:36px;margin-top:0px;margin-right:10px;" ><a href="javascript:closeres();">X</a></div>
+         <h2 align="center">注册</h2>
+        
+         </div>
+    	
+        <form  name="myfrom2" id="myform2" method="post" action="auth.php" style="padding-left:100px;">
+          账号：<input type="text" style="margin-left:30px;" id="rg_users" name="rg_users"><br><br>
+          密码：<input type="password" style="margin-left:30px;" id="rg_pwd" name="rg_pwd"><br><br>
+         确认密码：<input type="password" id="confirm_pwd"/><br><br>
+        <input type="button" value="注册" onclick="register()"/>
+        </form>
+     </div>    <div class="all" >
+    
+            <div class="top" >
+                    <div class="top_set" >
+                        <img src="images/logo.png" class="top_img"  />
+                        
+                        <div class="top_ban"  >
+                             <h5><a href="classify.html">课程目录</a>&nbsp;&nbsp;| &nbsp;<a href="javascript:openLogin();">登陆</a>&nbsp;&nbsp;| &nbsp;<a href="javascript:openres();">注册</a></h5>
+                            
+                            
+                        </div>
+                    </div>
+                  <div class="top_bottom" >
+                    <div style="height:50%;width:95%;margin-left:2%">
+                      课程分类：&nbsp;全部&nbsp;|&nbsp;哲史·文化经济&nbsp;·管理社会&nbsp;·法律教育&nbsp;·语言文学&nbsp;·艺术理学&nbsp;·工学医学&nbsp;·农学&nbsp;计算机&nbsp;心理学&nbsp;创业&nbsp;·职场
+                      </div>
+                   <div style="height:50%;width:100%;margin-left:2%">
+                      课程状态：&nbsp;全部|&nbsp; 即将开课&nbsp;开课中
+                      </div>
+                </div>
+            
+              </div>  
+        <div class="middle" >
+        	<div class="middle_1" >
+            	
+                <div class="middle_de"   />
+                	<a href="cont.html"><img src="images/timg1.jpg" width="100%" height="184px" /></a>
+                    <div class="middle_txt">
+                    	<a href="cont.html"><h4>程序设计基础（C语言）</h4></a>
+                        <p color="#ccc">&nbsp;深圳技师学院/xxx</p>
+                    </div>
+				</div>
+                <div class="middle_de"  />
+                	<img src="images/tanpan.png" width="100%" height="184px" />
+                    <div class="middle_txt">
+                    	<h4>谈判技巧</h4>
+                        <p color="#ccc">&nbsp;深圳技师学院/xxx</p>
+                    </div>
+				</div>
+                <div class="middle_de"   />
+                	<img src="images/chuangke.png" width="100%" height="184px" />
+                    <div class="middle_txt">
+                    	<h4>创课—大学生创新创业基础</h4>
+                        <p color="#ccc">&nbsp;深圳技师学院/xxx</p>
+                    </div>
+				</div>
+                
+            </div>
+        	
+            
+            <div class="middle_1">
+            	
+                <div class="middle_de"   />
+                	<img src="images/18zhong.png" width="100%" height="184px" />
+                    <div class="middle_txt">
+                    	<h4>职场需要的18种能力</h4>
+                        <p color="#ccc">&nbsp;深圳技师学院/xxx</p>
+                    </div>
+				</div>
+                <div class="middle_de"  />
+                	<img src="images/guoxue.png" width="100%" height="184px" />
+                    <div class="middle_txt">
+                    	<h4>国学经典导论</h4>
+                        <p color="#ccc">&nbsp;深圳技师学院/xxx</p>
+                    </div>
+				</div>
+                <div class="middle_de" />
+                	<img src="images/daojia.png" width="100%" height="184px" />
+                    <div class="middle_txt">
+                    	<h4>道家思想与健康心智</h4>
+                        <p color="#ccc">&nbsp;深圳技师学院/xxx</p>
+                    </div>
+				</div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+
+</html>

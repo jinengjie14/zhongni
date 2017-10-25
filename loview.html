@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>仲尼小组</title>
+<script type="text/javascript" src="js/1.js"></script>
+<style type="text/css">
+.out{
+box-shadow:0px 0px  5px 3px #aaa;
+}
+li{list-style:none;}
+a{text-decoration:none;color:#000000;}
+</style>
+</head>
+
+<body style="background:#E8FFF7">
+	 <div id="win"  style="width:400px;height:250px;background-color:#FFFFFF;position:absolute;top:25%;left:37%;z-index:1;display:none;border-radius:15px">
+   		 <div style="height:auto;width:100%">
+         <div style="height:auto;width:21px;float:right;font-size:36px;margin-top:0px;" ><a href="javascript:closeLogin();">X</a></div>
+         <h2 align="center">登录</h2>
+        
+         </div>
+    
+		<form  name="myfrom" id="myform" method="post" action="login.php" style="padding-left:100px;">
+            账号：<input type="text" id="users" name="users"/><br><br>
+            密码：<input type="password" id="password" name="password"/><br><br>
+            <input type="button" value="登录" onclick="landing()"/>
+            <input type="reset" value="重置"/>
+        </form>
+     </div>
+      <div id="reg"  style="width:400px;height:250px;background-color:#FFFFFF;position:absolute;top:25%;left:37%;z-index:1;display:none;border-radius:15px">
+   		 <div style="height:auto;width:100%">
+         <div style="height:auto;width:21px;float:right;font-size:36px;margin-top:0px;margin-right:10px;" ><a href="javascript:closeres();">X</a></div>
+         <h2 align="center">注册</h2>
+        
+         </div>
+    	
+        <form  name="myfrom2" id="myform2" method="post" action="auth.php" style="padding-left:100px;">
+          账号：<input type="text" style="margin-left:30px;" id="rg_users" name="rg_users"><br><br>
+          密码：<input type="password" style="margin-left:30px;" id="rg_pwd" name="rg_pwd"><br><br>
+         确认密码：<input type="password" id="confirm_pwd"/><br><br>
+        <input type="button" value="注册" onclick="register()"/>
+        </form>
+     </div>
+    <div style="height:auto;width:100%;">
+            <div style="height:600px;width:80%;margin-left: 10% ;">
+                <div style="height:10%;width:100%;">
+                    <img src="images/logo.png" style="height:100%;width:15%;float:left;" />
+                    
+                    <div style="height:80%;width:30%;float:right;" >
+                         <h5><a href="classify.html">课程目录</a>&nbsp;&nbsp;| &nbsp;<a href="user.html">张三</a>&nbsp;&nbsp;| &nbsp;<a href="#">退出</a></h5>
+                        
+                        
+                    </div>
+                </div>
+                 <div style="height:85%;width:100%;margin-top:5%;border-radius:10px;background:#DBFDF1" class="out">
+                	<div style="height:100%;width:55%;float:left;">
+					<embed width="100%" height="100%" src="view/123_01.mp4"  />
+                       <!--  <video autoplay="autoplay"></video>
+                          <div style="height:100%;width:100%;background:#00F;position:relative;z-index:100;"></div>-->
+                    </div>
+                    <div style="height:100%;width:44%;float:left;border-left:1px solid #999999;">
+                    	<div style="margin:5%">
+            
+                    	      <div><h4>C语言程序设计基础</h4></div>
+                    	      
+                    	          <div>&nbsp;&nbsp;&nbsp;1.1 程序设计语言的发展及其特点</div>
+                  	         
+                    	          <div> &nbsp;&nbsp;&nbsp;1.2 C语言的发展及其特点和应用</div>
+                  	         
+                    	          <div>&nbsp;&nbsp;&nbsp;1.3 C语言程序的基本结构</div>
+                  	          
+                    	          <div>&nbsp;&nbsp;&nbsp;1.4 编制C语言程序的基本步骤</div>
+                  	         
+                    	          <div>&nbsp;&nbsp;&nbsp;1.5 习题</div>
+                  	        
+                    	      <div><h4>基本数据类型、运算符与表达式</h4></div>
+                    	      
+                    	          <div>&nbsp;&nbsp;&nbsp;2.1 预备知识</div>
+                  	          
+                    	          <div> &nbsp;&nbsp;&nbsp;2.2 C语言的数据类型</div>
+                  	         
+                    	          <div>&nbsp;&nbsp;&nbsp;2.3 常量、变量和标识符</div>
+                  	         
+                    	          <div>&nbsp;&nbsp;&nbsp;2.4 简单数据类型与表示范围</div>
+                  	        
+                    	          <div>&nbsp;&nbsp;&nbsp;2.5 运算符与表达式</div>
+                  	        
+                    	          <div>&nbsp;&nbsp;&nbsp;2.6 运算符的优先级和结合性</div>
+                  	        
+                    	      
+                  	          <div><h4>基本输入输出和顺序程序设计</h4></div>
+                  	        
+                  	              <div>&nbsp;&nbsp;&nbsp;3.1 程序的控制结构</div>
+								  <div>&nbsp;&nbsp;&nbsp;3.2 格式化输出printf</div>
+								  <div>&nbsp;&nbsp;&nbsp;3.3 格式化输入scanf</div>
+								
+               	                
+                        </div>
+                   </div>
+                    
+                
+                </div>
+                
+               
+      	   </div>
+      <div style="height:auto;width:80%;margin-top:60px;margin-left:10%;background:#FFF;padding:15px;border-radius:10px;">
+      <h3>笔记区</h3>
+   		<textarea rows="20"  style="width:100%;" ></textarea>
+        <input type="button"  style="height:30px;width:80px;border-radius:10px;background:#009966;color:#FFFFFF;float:right;margin-top:5px;" value="保存" />
+		<div style="height:30px;width:100%"></div>
+           </div>
+           
+       
+    </div>
+
+</body>
+</html>
